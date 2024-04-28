@@ -1,6 +1,5 @@
-class selectiv {
-    //1.	Pedir al usuario un número y mostrar si es mayor o menor que 10.
-    mayorOmenor(){
+   //1.	Pedir al usuario un número y mostrar si es mayor o menor que 10.
+  function mayorOmenor(){
         let num = prompt("ingrese un numero")
         if (num ==10 ){
             console.log("el numero ",num, " es igual a la base")
@@ -14,7 +13,7 @@ class selectiv {
         }
     }
     //2.	Solicitar al usuario su edad y mostrar si es mayor o menor de edad.
-    mayordeedad(){
+   function mayordeedad(){
         let num = prompt("ingrese su edad ")
         if (num ==18 || num > 18 ){
             console.log("usted es mayor de edad")
@@ -24,7 +23,7 @@ class selectiv {
         }
     }
     //3.	Pedir al usuario un número y mostrar si es par o impar.
-    ParOimpar(){
+   function ParOimpar(){
         let num = prompt("ingrese un numero:")
         resp = num%2
         if (resp = 0 ){
@@ -37,7 +36,7 @@ class selectiv {
     }
 
     //4.	Solicitar al usuario un número y mostrar si es positivo o negativo.
-    psOng(){
+   function psOng(){
         let num = prompt("ingrese un numero ramdon:")
         if(num>= 0){
             console.log("el numero ", num , " es un numero positivo")
@@ -47,7 +46,7 @@ class selectiv {
         }
     }
     //5.	Pedir al usuario dos números y mostrar si son iguales o diferentes.
-    igualesOno(){
+    function igualesOno(){
         let num =prompt("ingrese un numero")
         let num2 = prompt("ingrese otro numero:")
         if(num == num2){
@@ -58,7 +57,7 @@ class selectiv {
         }
     }
     //6.	Solicitar al usuario un carácter y mostrar si es una vocal o consonante.
-    caracter(){
+    function caracter(){
         let caracter = prompt("ingrese un caracter")
         resp = "aeiouAEIOU".includes(caracter)
         if (resp){
@@ -69,7 +68,7 @@ class selectiv {
         }
     }
     //7.	Pedir dos nombres e indicar si son iguales, si el primer nombre es mayor que el segundo o menor que el segundo
-    nombresIguales(){
+   function  nombresIguales(){
         let nom1 = prompt("ingrese un nombre")
         let nom2 = prompt("ingrese otro nombre")
         if (nom1 == nom2){
@@ -84,7 +83,7 @@ class selectiv {
         }
     }
     //8.	Pedir al usuario un número y mostrar si es múltiplo de 3
-    Multiplo3(){
+    function Multiplo3(){
         let num= prompt("ingrese un numero ")
         resp = num%3
         if (resp == 0){
@@ -96,7 +95,7 @@ class selectiv {
         }
     }
     //9.	Solicitar al usuario un número y mostrar si es divisible por 2.
-   dibisible2(){
+   function dibisible2(){
         let num= prompt("ingrese un numero ")
         resp = num%2
         if (resp == 0){
@@ -110,7 +109,7 @@ class selectiv {
 
     }
     //10.	Pedir al usuario un número y mostrar si es mayor, menor o igual a 100.
-   igual100(){
+   function igual100(){
 
 
     let num1 = prompt("Ingrese un número");
@@ -126,7 +125,7 @@ class selectiv {
 
 
    // 12.	Pedir al usuario el monto total de una factura y el porcentaje de IVA aplicado. Luego, calcular y mostrar el monto total a pagar incluyendo el IVA.
-   total(){
+   function total(){
     let monton = prompt("ingrese el valor total de la factura:")
     let iva = prompt("ingrese el valor del iva agregado:")
     mul = monton* iva
@@ -135,7 +134,7 @@ class selectiv {
    }
 
     //14.	Pedir al usuario su nota en un examen y determinar si ha aprobado o reprobado, considerando que la nota mínima de aprobación es 60 puntos.
-    aprobar(){
+    function aprobar(){
         let nota = prompt("ingrese su calificacion ")
         if (nota>= 60){
             console.log("usted aprobo con la calificacion de "+ nota)
@@ -147,7 +146,7 @@ class selectiv {
 
     //15.	Solicitar al usuario el precio de venta de un vehículo nuevo y su año de fabricación. 
     //Si el año de fabricación es anterior a 2010, aplicar un descuento del 10% sobre el precio de venta y mostrar el precio final.
-    vehiculo(){
+    function vehiculo(){
         let precioVenta = parseFloat(prompt("Ingrese el precio de venta del vehículo:"));
         let anoFabricacion = parseInt(prompt("Ingrese el año de fabricación del vehículo:"));
 
@@ -163,7 +162,7 @@ class selectiv {
 
     //16.	Pedir al usuario su sueldo mensual y determinar su sueldo anual. 
     //Si el sueldo anual supera los $30,000, aplicar un impuesto del 15% sobre el excedente y mostrar el sueldo neto anual.
-    SUELDO(){
+    function SUELDO(){
         let sueldo = prompt("ingrese dueldo mensual")
         sueldoanual = sueldo * 12
         iva = 0.0
@@ -196,7 +195,7 @@ class selectiv {
     //considerando lo siguiente:
     //Si es de tipo A, se le cargan $2 al precio inicial cuando es de tamaño 1; y $3 si es de tamaño 2.
     //Si es de tipo B, se rebajan $3 cuando es de tamaño 1, y $5 cuando es de tamaño 2.Realice un algoritmo para determinar la ganancia obtenida.
-    precio(){
+    function precio(){
         let tipoBanano = 'A'
         let tamañoBanano = 2
         let precioInicial = 10
@@ -228,7 +227,7 @@ class selectiv {
     // Para más de 200 personas el costo por platillo es de $10.00.
     //Se requiere un algoritmo que ayude a determinar el presupuesto que se debe presentar a los clientes que deseen realizar un evento, 
     //considerando que al total hay que agregarle el 15% del iva
-    somosmas(){
+    function somosmas(){
         let numeroPersonas = prompt("ingrese un valor"); // Número de personas para el evento
 
         let costoPorPersona;
@@ -255,7 +254,7 @@ class selectiv {
 
 
     //19.	Dado un arreglo de 5 elementos indicar si el primero elemento es mayor que el último elemento.
-    elemento(){
+    function elemento(){
         let arreglo = [5, 10, 15, 20, 25]; // Ejemplo de un arreglo de 5 elementos
 
         if (arreglo[0] > arreglo[4]) {        
@@ -270,7 +269,7 @@ class selectiv {
 
     //20.	Dado un arreglo de 5 elementos indicar si el primero elemento es par y el último elemento es impar.
 
-    elemento2(){
+    function elemento2(){
         let arreglo = [5, 10, 15, 20, 25]; // Ejemplo de un arreglo de 5 elementos
 
         a = arreglo[0]%2
@@ -291,7 +290,7 @@ class selectiv {
 
 
     //21.	Dado un arreglo de 3 elementos indicar cuál de los elementos es el mayor
-    mayor(){
+    function mayor(){
         let arreglo =[12,3,8]
         mayor = 0
         if (arreglo[0]>mayor  ){
@@ -313,18 +312,32 @@ class selectiv {
     }
 
 
-
-
-
     //22.	Dado un arreglo de 5 elementos presentar la suma de dichos elementos
-    sumadearreglo(){
+    function sumadearreglo(){
         let arreglo=[50,10,11,21,5]
-        suma = arreglo[0]+arreglo[1]+arreglo[2]+arreglo[3]+arreglo[4]
-        console.log(suma)
-    }
+       suma = arreglo[0]+arreglo[1]+arreglo[2]+arreglo[3]+arreglo[4]
+       console.log(suma)    }
 
 
-    
-
-}
-const arr = new selectiv()  
+mayorOmenor()
+mayordeedad()
+ParOimpar()
+psOng()
+igualesOno()
+caracter()
+nombresIguales()
+Multiplo3()
+dibisible2()
+igual100()
+total()
+aprobar()
+vehiculo()
+aprobar()
+vehiculo()
+SUELDO()
+precio()
+somosmas()
+elemento()
+elemento2()
+mayor()
+sumadearreglo()
