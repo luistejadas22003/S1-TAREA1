@@ -1,11 +1,10 @@
-class deber{
-    //1.	Pedir al usuario su nombre y saludarlo.
-    nombre(){
+//al usuario su nombre y saludarlo.
+   function nombre(){
         let nombre = prompt("porfavor ingrese su nombre");
         console.log ("hola mucho gusto " , nombre);
     }
     //2.	Pedir dos palabras y presentarlas concatenadas
-    concatenadas(){
+   function concatenadas(){
         let pal1 = prompt("porfavor ingrese una palabra");
         let pal2 = prompt("porfabor ingrese otra palabra");
         resp= pal1 , " " , pal2;
@@ -13,28 +12,28 @@ class deber{
 
     }
     //3.	Solicitar al usuario dos números y mostrar su suma.
-    SumaDEdosNumeros(){
+   function SumaDEdosNumeros(){
         let num1 = prompt("porfavor ingrese un numero");
         let num2 = prompt("porfavor ingrese otro numero");
         resp= num1 , num2;
         console.log("la respuesta de la suma ",num1,"+",  num2, "=", resp);
     }
     //4.	Pedir al usuario un número y mostrar su doble.
-    Doble(){
+   function Doble(){
         let numero = prompt ("ingrese un numero");
         resp = numero *2;
         console.log("el doble del numero ",numero, "es" , resp);
     }
 
     //5.	Solicitar al usuario su edad y mostrar un mensaje indicando cuántos años tendrá en el próximo año.
-    EdadDelProximoAño(){
+   function EdadDelProximoAño(){
         let edadactial = prompt("ingrese su edad actual");
         proximo = edadactial + 1;
         console.log("la edad q usted tendra el proximo año es de ", proximo);
 
     }
     //6.	Pedir al usuario dos números y mostrar el resultado de multiplicarlos.
-    MultiplicarDos(){
+   function MultiplicarDos(){
         let num1 = prompt ("ingrese un numero");
         let num2 = prompt("ingrese otro numero");
         resp = num1 * num2
@@ -42,20 +41,20 @@ class deber{
 
     }
     //7.	Solicitar al usuario una temperatura en grados Celsius y mostrarla en grados Fahrenheit.
-    Celsius(){
+   function Celsius(){
         let Celsius = prompt("ingrese grados Celsius");
         f = (Celsius*9/5)+32;
         console.log("grados Celsius de " +Celsius + "°c  a grados Fahrenheit es de "+f+"°F");
     }
     //8.	Pedir al usuario su nombre y mostrarlo tres veces en la pantalla.
-    repetir(){
+   function repetir(){
         let nombre = prompt("ingrese su nombre");
         for(let i= 0;i <3;i++){
         console.log(nombre);
         }
     }
     //9.	Solicitar al usuario un número y mostrar su tabla de multiplicar del 1 al 10.
-    tabla(){
+  function  tabla(){
         let tabla = prompt("ingrese un numero de la tabla de multiplicar");
         for (let i= 0;i <= 10;i++){
             resp = i * tabla
@@ -63,7 +62,7 @@ class deber{
         }
     }
     //10.	Pedir al usuario dos números y mostrar el mayor.
-    mayornumero(){
+  function  mayornumero(){
         let num1 = prompt("ingrese un numero")
         let num2 = prompt("ingrese otro numero")
         if (num1>num2){
@@ -75,7 +74,7 @@ class deber{
         }
     }
     //11.	Solicitar al usuario una distancia en metros y mostrarla en centímetros.
-    metrosAcentimetros(){
+   function metrosAcentimetros(){
       
         let metros = prompt("ingrese cantidad de metros")
         resp= metros * 100
@@ -84,7 +83,7 @@ class deber{
     }
 
     //12.	Pedir 5 números y asignarlos en un arreglo
-    pedirNumeros(){
+   function pedirNumeros(){
         var numeros = []
         for (var i = 0; i < 5; i++) {
             var numero = prompt("Por favor ingresa el número " + (i+1) + ":")
@@ -95,7 +94,7 @@ class deber{
 
 
     //13.	Dado un arreglo de 5 nombres presentarlos todos
-    Nombre(){
+   function Nombre(){
         let nombres = ["LUIS", "Martin", "Carlos", "Tejada", "Pedro"]
 
         for (let i = 0; i < nombres.length; i++) {
@@ -105,7 +104,7 @@ class deber{
 
 
     //14.	Dado un arreglo de 5 elementos, presentar el primero, el del medio y el ultimo
-    elemento(){
+  function  elemento(){
         let nom= prompt("ingrese un nombre")
         x=nom[0]
         a=nom[2]
@@ -116,7 +115,7 @@ class deber{
     }
 
     //15.	Dado un arreglo de 5 elementos, cambiar los valores el primer y último elemento entre sí
-    elemento1(){
+   function elemento1(){
         let arreglo = ["ana", "Ana", "Luis", "STEVEN", "EMELY"]
 
         let temp = arreglo[0]
@@ -127,8 +126,20 @@ class deber{
 
     }
 
+nombres()
+concatenadas()
+SumaDEdosNumeros()
+Doble()
+EdadDelProximoAño()
+MultiplicarDos()
+Celsius()
+repetir()
+tabla()
+mayornumero()
+metrosAcentimetros()
+pedirNumeros()
+Nombre()
+elemento()
+elemento1()
+ 
 
-
-    
-}
-const arr = new deber()
